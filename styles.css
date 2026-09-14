@@ -634,3 +634,11 @@ footer a:hover{color:var(--gold);}
   width: min(330px, 100%);
   max-height: 150px;
 }
+
+
+.partner-contact-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
