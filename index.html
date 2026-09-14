@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Agri-Agra & Minerals Corporation</title>
+<meta name="description" content="UAAMC develops, finances, and manages agricultural, agribusiness, and rural enterprise projects across the Philippines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>
+  :root{
+    --forest:#1B4332;
+    --forest-deep:#122B21;
+    --leaf:#40916C;
+    --leaf-light:#74A57F;
+    --earth:#A9744F;
+    --earth-light:#C79766;
+    --gold:#D4A144;
+    --cream:#FAF6EC;
+    --cream-alt:#F1E8D6;
+    --ink:#22301D;
+    --ink-soft:#4A5D45;
+    --line:rgba(27,67,50,0.14);
+    --max:1160px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Public Sans', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', serif;
+    color:var(--forest);
+    margin:0 0 0.4em 0;
+    line-height:1.15;
+    font-weight:600;
+  }
+  p{margin:0 0 1em 0;}
+  a{color:inherit;}
+  img,svg{display:block; max-width:100%;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+  section{padding:96px 0;}
+  ul{margin:0; padding:0;}
+
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--gold);
+    outline-offset:2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,246,236,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 0;
+  }
+  .brand{
+    display:flex; align-items:center; gap:12px;
+    text-decoration:none;
+  }
+  .brand-mark{width:44px; height:44px; flex-shrink:0; object-fit:contain;}
+  .brand-text{font-family:'Fraunces', serif; font-weight:600; color:var(--forest); font-size:1.02rem; line-height:1.2;}
+  .brand-text small{display:block; font-family:'Public Sans',sans-serif; font-weight:600; font-size:0.62rem; letter-spacing:0.03em; color:var(--earth); margin-top:2px;}
+
+  nav ul{display:flex; gap:32px; list-style:none;}
+  nav a{
+    text-decoration:none; color:var(--ink-soft); font-weight:600; font-size:0.92rem;
+    padding:4px 0; border-bottom:2px solid transparent;
+  }
+  nav a:hover{color:var(--forest); border-color:var(--gold);}
+  .nav-cta{
+    background:var(--forest); color:var(--cream); padding:10px 20px; border-radius:3px;
+    font-weight:600; font-size:0.88rem; text-decoration:none; white-space:nowrap;
+    transition:background 0.15s ease;
+  }
+  .nav-cta:hover{background:var(--leaf);}
+  .menu-btn{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .menu-btn span{display:block; width:24px; height:2px; background:var(--forest); margin:5px 0;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:72px 0 0 0;
+    background:linear-gradient(180deg, var(--cream) 0%, var(--cream-alt) 100%);
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
+  }
+  .eyebrow-tag{
+    display:inline-block; color:var(--earth); font-weight:700; font-size:0.82rem;
+    margin-bottom:18px; letter-spacing:0.01em;
+  }
+  .hero h1{
+    font-size:clamp(2.2rem, 3.6vw, 3.05rem);
+    font-weight:600;
+    max-width:12ch;
+  }
+  .hero .tagline{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:500;
+    color:var(--leaf); font-size:1.22rem; margin:14px 0 20px 0;
+  }
+  .hero p.lead{
+    color:var(--ink-soft); font-size:1.05rem; max-width:46ch; margin-bottom:30px;
+  }
+  .hero-ctas{display:flex; gap:16px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px; border-radius:3px; font-weight:600; font-size:0.95rem;
+    text-decoration:none; border:1.5px solid transparent; cursor:pointer;
+    transition:transform 0.12s ease, background 0.15s ease;
+  }
+  .btn-primary{background:var(--forest); color:var(--cream);}
+  .btn-primary:hover{background:var(--leaf);}
+  .btn-outline{border-color:var(--forest); color:var(--forest);}
+  .btn-outline:hover{background:var(--forest); color:var(--cream);}
+
+  .hero-art{width:100%; height:auto;}
+
+  /* ---------- Section headers ---------- */
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-head .kicker{
+    color:var(--earth); font-weight:700; font-size:0.82rem; display:block; margin-bottom:10px;
+  }
+  .section-head h2{font-size:clamp(1.7rem, 2.4vw, 2.2rem);}
+  .section-head p{color:var(--ink-soft); font-size:1.02rem; margin-top:12px;}
+
+  /* ---------- About ---------- */
+  .about{background:var(--cream);}
+  .about-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start;
+  }
+  .about-copy p{color:var(--ink-soft); font-size:1.02rem;}
+  .vm-stack{display:flex; flex-direction:column; gap:22px;}
+  .vm-card{
+    background:var(--cream-alt);
+    border-left:3px solid var(--leaf);
+    padding:26px 28px;
+  }
+  .vm-card.mission{border-left-color:var(--earth);}
+  .vm-card h3{font-size:1.15rem; margin-bottom:10px;}
+  .vm-card p{color:var(--ink-soft); font-size:0.97rem; margin:0;}
+  .vm-card ul{list-style:none; margin-top:4px;}
+  .vm-card li{
+    color:var(--ink-soft); font-size:0.95rem; padding:6px 0 6px 20px; position:relative;
+  }
+  .vm-card li::before{
+    content:""; position:absolute; left:0; top:15px; width:6px; height:6px;
+    background:var(--earth); border-radius:50%;
+  }
+
+  /* ---------- Core Business Areas ---------- */
+  .services{background:var(--forest); color:var(--cream);}
+  .services .section-head h2{color:var(--cream);}
+  .services .section-head p{color:rgba(250,246,236,0.75);}
+  .services .kicker{color:var(--gold);}
+  .service-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:2px;
+    background:rgba(250,246,236,0.14);
+  }
+  .service-card{
+    background:var(--forest-deep);
+    padding:34px 30px;
+    display:flex; flex-direction:column; gap:14px;
+  }
+  .service-card .icon{width:40px; height:40px;}
+  .service-card h3{color:var(--cream); font-size:1.08rem;}
+  .service-card ul{list-style:none; display:flex; flex-direction:column; gap:7px;}
+  .service-card li{
+    color:rgba(250,246,236,0.72); font-size:0.9rem; padding-left:16px; position:relative;
+  }
+  .service-card li::before{
+    content:"—"; position:absolute; left:0; color:var(--gold);
+  }
+
+  /* ---------- Strategic Advantage ---------- */
+  .advantage{background:var(--cream-alt);}
+  .adv-row{
+    display:grid; grid-template-columns:repeat(6, 1fr); gap:0;
+    border-top:1px solid var(--line);
+  }
+  .adv-item{
+    padding:28px 18px; border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+    text-align:center;
+  }
+  .adv-item:last-child{border-right:none;}
+  .adv-item .icon{width:32px; height:32px; margin:0 auto 14px auto;}
+  .adv-item p{font-size:0.86rem; font-weight:600; color:var(--forest); margin:0; line-height:1.35;}
+
+  /* ---------- Philosophy / Commitment ---------- */
+  .philosophy{background:var(--cream);}
+  .phil-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px;}
+  .phil-block h3{font-size:1.28rem; margin-bottom:8px;}
+  .phil-block > p{color:var(--ink-soft); margin-bottom:22px; font-size:0.97rem;}
+  .chip-list{display:flex; flex-wrap:wrap; gap:10px;}
+  .chip{
+    padding:9px 16px; border:1.5px solid var(--leaf); color:var(--forest);
+    border-radius:100px; font-size:0.87rem; font-weight:600;
+  }
+  .phil-block.commitment .chip{border-color:var(--earth);}
+
+  /* ---------- Contact / Footer ---------- */
+  .cta-band{
+    background:var(--earth); color:var(--cream); text-align:center; padding:76px 0;
+  }
+  .cta-band h2{color:var(--cream); font-size:clamp(1.7rem,3vw,2.3rem); max-width:20ch; margin:0 auto 14px auto;}
+  .cta-band p{color:rgba(250,246,236,0.85); max-width:52ch; margin:0 auto 30px auto;}
+  .cta-band .btn-primary{background:var(--forest-deep);}
+  .cta-band .btn-primary:hover{background:var(--forest);}
+
+  footer{background:var(--forest-deep); color:rgba(250,246,236,0.72); padding:56px 0 28px 0;}
+  .foot-grid{
+    display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:48px; padding-bottom:36px;
+    border-bottom:1px solid rgba(250,246,236,0.14);
+  }
+  .foot-brand{display:flex; gap:12px; align-items:center; margin-bottom:14px;}
+  .foot-brand .brand-mark{width:32px; height:32px;}
+  .foot-brand span{font-family:'Fraunces',serif; color:var(--cream); font-weight:600;}
+  footer h4{color:var(--cream); font-size:0.88rem; margin-bottom:14px; text-transform:none;}
+  footer ul{list-style:none; display:flex; flex-direction:column; gap:9px;}
+  footer a{text-decoration:none; color:rgba(250,246,236,0.72); font-size:0.9rem;}
+  footer a:hover{color:var(--gold);}
+  .foot-bottom{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    padding-top:24px; font-size:0.82rem; color:rgba(250,246,236,0.5);
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:900px){
+    .hero .wrap{grid-template-columns:1fr; gap:36px;}
+    .hero{padding-top:48px;}
+    .hero-art{order:-1; max-width:420px; margin:0 auto;}
+    .about-grid, .phil-grid{grid-template-columns:1fr; gap:40px;}
+    .service-grid{grid-template-columns:repeat(2,1fr);}
+    .adv-row{grid-template-columns:repeat(3,1fr);}
+    .adv-item:nth-child(3){border-right:none;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    nav ul{display:none;}
+    .menu-btn{display:block;}
+  }
+  @media (max-width:560px){
+    section{padding:64px 0;}
+    .service-grid{grid-template-columns:1fr;}
+    .adv-row{grid-template-columns:repeat(2,1fr);}
+    .adv-item:nth-child(3){border-right:1px solid var(--line);}
+    .adv-item:nth-child(2n){border-right:none;}
+    .foot-grid{grid-template-columns:1fr;}
+    .nav-cta{padding:8px 14px; font-size:0.82rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-row">
+    <a href="#top" class="brand">
+      <img class="brand-mark" src="assets/uaamc-logo.png" alt="UAAMC logo">
+      <span class="brand-text">UAAMC<small>Agri-Agra & Minerals Corp.</small></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Our Approach</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta">Partner With Us</a>
+    <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow-tag">Philippine Agribusiness & Rural Development</span>
+        <h1>Growing agriculture into lasting rural prosperity</h1>
+        <p class="tagline">Empowering Agriculture. Advancing Rural Prosperity. Creating Sustainable Investments.</p>
+        <p class="lead">UAAMC develops, finances, and manages agricultural, agribusiness, and mineral resource projects — bridging investment capital, technical expertise, and government programs into bankable, community-driven growth.</p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn btn-primary">Explore Our Services</a>
+          <a href="#contact" class="btn btn-outline">Partner With Us</a>
+        </div>
+      </div>
+
+      <svg class="hero-art" viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="390" cy="95" r="52" fill="#D4A144" opacity="0.85"/>
+        <path d="M0 460L0 300C60 260 120 280 170 250C230 215 260 260 320 235C380 210 420 240 520 210V460Z" fill="#74A57F" opacity="0.55"/>
+        <path d="M0 460V340C60 320 90 335 150 315C220 292 260 320 330 300C400 280 440 300 520 280V460Z" fill="#40916C"/>
+        <path d="M0 460V400C50 388 90 396 140 384C200 370 250 390 310 378C380 364 430 382 520 366V460Z" fill="#1B4332"/>
+        <!-- terraces -->
+        <g fill="none" stroke="#F1E8D6" stroke-width="2" opacity="0.55">
+          <path d="M10 405C70 393 110 401 160 389C220 375 270 395 330 383C400 369 440 387 510 371"/>
+          <path d="M10 425C70 414 110 421 160 410C220 396 270 415 330 403C400 390 440 407 510 392"/>
+          <path d="M10 443C70 433 110 439 160 429C220 416 270 434 330 423C400 411 440 426 510 412"/>
+        </g>
+        <!-- sprout accents on terraces -->
+        <g stroke="#D4A144" stroke-width="2" stroke-linecap="round">
+          <path d="M90 400C90 392 86 388 82 386"/>
+          <path d="M90 400C90 392 94 388 98 386"/>
+          <path d="M250 388C250 380 246 376 242 374"/>
+          <path d="M250 388C250 380 254 376 258 374"/>
+          <path d="M410 378C410 370 406 366 402 364"/>
+          <path d="M410 378C410 370 414 366 418 364"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">About Us</span>
+        <h2>A catalyst for sustainable agricultural growth</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>Universal Agri-Agra & Minerals Corporation (UAAMC) is a Philippine corporation dedicated to the development, financing, implementation, and management of agricultural, agribusiness, agro-industrial, mineral resource, and rural enterprise projects.</p>
+          <p>The company bridges investment capital, technical expertise, government programs, and private-sector opportunities to create impactful, bankable development initiatives — supporting farming communities, cooperatives, local government units, and private investors alike.</p>
+          <p>UAAMC is positioned to support projects aligned with national development priorities and Agri-Agra financing programs, contributing to agricultural productivity, technology transfer, employment generation, and countryside development.</p>
+        </div>
+        <div class="vm-stack">
+          <div class="vm-card">
+            <h3>Vision</h3>
+            <p>To become a leading Philippine agribusiness and development enterprise that transforms agricultural resources into sustainable economic opportunities while empowering rural communities and contributing to national food security.</p>
+          </div>
+          <div class="vm-card mission">
+            <h3>Mission</h3>
+            <ul>
+              <li>Enhance agricultural productivity and competitiveness</li>
+              <li>Promote sustainable investments in rural communities</li>
+              <li>Generate employment and livelihood opportunities</li>
+              <li>Strengthen food security and value-chain integration</li>
+              <li>Foster strategic partnerships among government, investors, and local stakeholders</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE BUSINESS AREAS -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">What We Do</span>
+        <h2>Core Business Areas</h2>
+        <p>Five interconnected fields of work that turn agricultural resources into bankable, sustainable enterprises.</p>
+      </div>
+    </div>
+    <div class="service-grid">
+
+      <div class="service-card">
+        <svg class="icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 34V16" stroke="#D4A144" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 22C20 22 9 20 9 10C16 10 20 15 20 22Z" fill="#74A57F"/>
+          <path d="M20 18C20 18 31 16 31 8C24 8 20 12.5 20 18Z" fill="#40916C"/>
+        </svg>
+        <h3>Agricultural Development</h3>
+        <ul>
+          <li>Integrated farming systems</li>
+          <li>Contract growing arrangements</li>
+          <li>High-value crop production</li>
+          <li>Livestock and poultry enterprises</li>
+          <li>Fisheries and aquaculture development</li>
+          <li>Agricultural technology deployment</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <svg class="icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="7" y="18" width="10" height="14" fill="#74A57F"/>
+          <rect x="19" y="10" width="10" height="22" fill="#40916C"/>
+          <rect x="31" y="22" width="6" height="10" fill="#D4A144"/>
+        </svg>
+        <h3>Agri-Business & Value Chain</h3>
+        <ul>
+          <li>Food processing facilities</li>
+          <li>Agricultural consolidation centers</li>
+          <li>Storage and warehousing systems</li>
+          <li>Cold chain facilities</li>
+          <li>Market linkage development</li>
+          <li>Export-oriented enterprises</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <svg class="icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="13" stroke="#74A57F" stroke-width="2.2"/>
+          <path d="M20 13V27M15 17H23.5C25 17 26 17.9 26 19.2C26 20.5 25 21.5 23.5 21.5H16.5C15 21.5 14 22.4 14 23.7C14 25 15 26 16.5 26H25" stroke="#D4A144" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3>Agri-Agra Financing & Packaging</h3>
+        <ul>
+          <li>Investment structuring</li>
+          <li>Project feasibility development</li>
+          <li>Financial packaging</li>
+          <li>Public-Private Partnership facilitation</li>
+          <li>Agri-Agra accreditation support</li>
+          <li>Institutional financing coordination</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <svg class="icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 8L30 26H10L20 8Z" fill="#40916C"/>
+          <path d="M20 8L25 26H15L20 8Z" fill="#74A57F"/>
+          <rect x="8" y="26" width="24" height="4" fill="#D4A144"/>
+        </svg>
+        <h3>Mineral & Resource Development</h3>
+        <ul>
+          <li>Resource-based enterprise development</li>
+          <li>Responsible mineral utilization</li>
+          <li>Environmental compliance support</li>
+          <li>Sustainable resource management</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <svg class="icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="8" y="16" width="24" height="16" fill="#74A57F"/>
+          <path d="M6 16L20 7L34 16" stroke="#D4A144" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="18" y="22" width="4" height="10" fill="#122B21"/>
+        </svg>
+        <h3>Infrastructure & Development</h3>
+        <ul>
+          <li>Rural infrastructure projects</li>
+          <li>Agricultural support facilities</li>
+          <li>Logistics systems</li>
+          <li>Community development investments</li>
+          <li>Renewable energy for agriculture</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STRATEGIC ADVANTAGE -->
+  <section class="advantage" id="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Our Approach</span>
+        <h2>Strategic Advantage</h2>
+        <p>Extensive, hands-on experience across the full lifecycle of an agribusiness project.</p>
+      </div>
+    </div>
+    <div class="adv-row">
+      <div class="adv-item">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 4C10 4 6 9 6 15C6 21 16 28 16 28C16 28 26 21 26 15C26 9 22 4 16 4Z" stroke="#1B4332" stroke-width="2" stroke-linejoin="round"/><circle cx="16" cy="15" r="3.4" stroke="#D4A144" stroke-width="2"/></svg>
+        <p>Agricultural project development</p>
+      </div>
+      <div class="adv-item">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="5" y="14" width="6" height="13" stroke="#1B4332" stroke-width="2"/><rect x="13" y="8" width="6" height="19" stroke="#1B4332" stroke-width="2"/><rect x="21" y="4" width="6" height="23" fill="#D4A144"/></svg>
+        <p>Government relations & regulatory compliance</p>
+      </div>
+      <div class="adv-item">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 27V16M16 16C16 16 6 15 6 6C13 6 16 10 16 16C16 10 19 6 26 6C26 15 16 16 16 16Z" stroke="#1B4332" stroke-width="2" stroke-linejoin="round"/></svg>
+        <p>Investment facilitation</p>
+      </div>
+      <div class="adv-item">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="10" cy="10" r="4" stroke="#1B4332" stroke-width="2"/><circle cx="22" cy="10" r="4" stroke="#1B4332" stroke-width="2"/><path d="M4 26C4 21 7 18 10 18M28 26C28 21 25 18 22 18" stroke="#D4A144" stroke-width="2" stroke-linecap="round"/><path d="M11 26C11 21 13 19 16 19C19 19 21 21 21 26" stroke="#1B4332" stroke-width="2"/></svg>
+        <p>Public-private collaboration</p>
+      </div>
+      <div class="adv-item">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 24L14 8L20 18L26 6" stroke="#1B4332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="6" r="2.4" fill="#D4A144"/></svg>
+        <p>Technical & engineering consultancy</p>
+      </div>
+      <div class="adv-item">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="11" stroke="#1B4332" stroke-width="2"/><path d="M16 10V16L20 19" stroke="#D4A144" stroke-width="2" stroke-linecap="round"/></svg>
+        <p>Resource mobilization & fund sourcing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY + COMMITMENT -->
+  <section class="philosophy">
+    <div class="wrap phil-grid">
+      <div class="phil-block">
+        <h3>Development Philosophy</h3>
+        <p>Sustainable development is achieved by integrating capital with community — connecting these pillars into projects that are economically viable, socially beneficial, and environmentally sustainable.</p>
+        <div class="chip-list">
+          <span class="chip">Investment Capital</span>
+          <span class="chip">Technology</span>
+          <span class="chip">Market Access</span>
+          <span class="chip">Community Participation</span>
+          <span class="chip">Environmental Stewardship</span>
+          <span class="chip">Good Governance</span>
+        </div>
+      </div>
+      <div class="phil-block commitment">
+        <h3>Commitment to National Development</h3>
+        <p>UAAMC actively supports initiatives that strengthen the Philippine countryside and its people.</p>
+        <div class="chip-list">
+          <span class="chip">Food Security</span>
+          <span class="chip">Agricultural Modernization</span>
+          <span class="chip">Rural Industrialization</span>
+          <span class="chip">Poverty Reduction</span>
+          <span class="chip">Employment Generation</span>
+          <span class="chip">Inclusive Economic Growth</span>
+          <span class="chip">Environmental Sustainability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="cta-band" id="contact">
+    <div class="wrap">
+      <h2>Building sustainable opportunities through agriculture, innovation, and strategic investments</h2>
+      <p>Whether you're a cooperative, LGU, investor, or development partner — we'd welcome the conversation.</p>
+      <a href="mailto:info@uaamc.example.com" class="btn btn-primary">Email Us</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img class="brand-mark" src="assets/uaamc-logo.png" alt="UAAMC logo">
+          <span>Universal Agri-Agra & Minerals Corporation</span>
+        </div>
+        <p style="max-width:34ch; font-size:0.9rem; color:rgba(250,246,236,0.6);">A Philippine agribusiness and development enterprise turning agricultural resources into sustainable, inclusive economic growth.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Core Business Areas</a></li>
+          <li><a href="#approach">Our Approach</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@uaamc.example.com">info@uaamc.example.com</a></li>
+          <li>Manila, Philippines</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Universal Agri-Agra & Minerals Corporation. All rights reserved.</span>
+      <span>Company details to be finalized upon confirmation.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
