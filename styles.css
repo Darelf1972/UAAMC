@@ -313,3 +313,191 @@ footer a:hover{color:var(--gold);}
   .foot-grid{grid-template-columns:1fr;}
   .nav-cta{padding:8px 14px; font-size:0.82rem;}
 }
+
+
+/* ---------- Mobile navigation enhancement ---------- */
+@media (max-width:900px){
+  header nav.is-open{
+    display:block;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--cream);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 12px 24px rgba(18,43,33,0.08);
+  }
+  header nav.is-open ul{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    padding:8px 28px 18px;
+  }
+  header nav.is-open li a{
+    display:block;
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+  }
+  header nav.is-open li:last-child a{border-bottom:0;}
+  .nav-row{position:relative;}
+}
+
+
+/* =========================================================
+   UAAMC Color Theme Refresh
+   Each inner page has a distinct accent while retaining
+   the shared green-and-earth corporate identity.
+   ========================================================= */
+
+/* Shared visual polish */
+.page-banner{
+  position:relative;
+  overflow:hidden;
+}
+.page-banner::after{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  right:-110px;
+  top:-150px;
+  border-radius:50%;
+  background:var(--page-accent-soft, rgba(212,161,68,.18));
+  pointer-events:none;
+}
+.page-banner .wrap{position:relative; z-index:1;}
+.page-banner h1{max-width:18ch;}
+.section-head h2{letter-spacing:-.015em;}
+.card, .service-card, .contact-card, .vm-card, .adv-item{
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+/* ABOUT — fresh leaf / botanical palette */
+.page-about{
+  --page-accent:#2F855A;
+  --page-accent-soft:rgba(47,133,90,.20);
+}
+.page-about .page-banner{
+  background:
+    radial-gradient(circle at 86% 18%, rgba(116,165,127,.30), transparent 24%),
+    linear-gradient(135deg,#F8F7E9 0%,#E5F0DF 100%);
+}
+.page-about .about{
+  background:linear-gradient(180deg,#FBFAF1 0%,#F0F5E9 100%);
+}
+.page-about .vm-card{
+  background:#E6F0DF;
+  border-left-color:#2F855A;
+}
+.page-about .vm-card.mission{
+  background:#F7EBD7;
+  border-left-color:#C27B36;
+}
+.page-about .cta-band{
+  background:linear-gradient(120deg,#24543B 0%,#3F8060 100%);
+}
+
+/* SERVICES — deeper emerald with warm gold highlights */
+.page-services{
+  --page-accent:#D4A144;
+  --page-accent-soft:rgba(212,161,68,.25);
+}
+.page-services .page-banner{
+  background:
+    radial-gradient(circle at 88% 10%,rgba(212,161,68,.28),transparent 25%),
+    linear-gradient(135deg,#F7F0DF 0%,#E8E4C9 100%);
+}
+.page-services .services{
+  background:linear-gradient(135deg,#163B2C 0%,#24543B 55%,#315F45 100%);
+}
+.page-services .service-card{
+  background:rgba(10,39,28,.82);
+  border-top:3px solid transparent;
+}
+.page-services .service-card:hover{
+  transform:translateY(-5px);
+  background:#214B36;
+  border-top-color:var(--gold);
+  box-shadow:0 14px 30px rgba(0,0,0,.14);
+}
+.page-services .service-card:nth-child(2n){
+  border-top-color:#74A57F;
+}
+.page-services .cta-band{
+  background:linear-gradient(120deg,#D4A144 0%,#B98035 100%);
+}
+.page-services .cta-band h2,
+.page-services .cta-band p{color:#173A2A;}
+
+/* APPROACH — calm blue-green / strategic palette */
+.page-approach{
+  --page-accent:#4F8F9B;
+  --page-accent-soft:rgba(79,143,155,.23);
+}
+.page-approach .page-banner{
+  background:
+    radial-gradient(circle at 85% 20%,rgba(79,143,155,.25),transparent 26%),
+    linear-gradient(135deg,#EDF4EF 0%,#DCEBE7 100%);
+}
+.page-approach .advantage{
+  background:linear-gradient(180deg,#E7F0EC 0%,#D8E8E3 100%);
+}
+.page-approach .adv-item{
+  background:rgba(255,255,255,.28);
+}
+.page-approach .adv-item:hover{
+  transform:translateY(-4px);
+  background:rgba(255,255,255,.72);
+  box-shadow:0 12px 24px rgba(27,67,50,.08);
+}
+.page-approach .philosophy{
+  background:#FAF7EF;
+}
+.page-approach .chip{
+  border-color:#4F8F9B;
+  background:rgba(79,143,155,.07);
+}
+.page-approach .cta-band{
+  background:linear-gradient(120deg,#245D63 0%,#397D7B 100%);
+}
+
+/* CONTACT — warm, welcoming terracotta / sand palette */
+.page-contact{
+  --page-accent:#B86F4B;
+  --page-accent-soft:rgba(184,111,75,.23);
+}
+.page-contact .page-banner{
+  background:
+    radial-gradient(circle at 86% 15%,rgba(184,111,75,.25),transparent 25%),
+    linear-gradient(135deg,#FAF0E4 0%,#F0DFC9 100%);
+}
+.page-contact .about{
+  background:linear-gradient(180deg,#FFF9F1 0%,#F7E9D9 100%);
+}
+.page-contact .contact-card{
+  background:#FFFDF8;
+  border:1px solid rgba(184,111,75,.22);
+  border-top:4px solid #B86F4B;
+  box-shadow:0 12px 28px rgba(116,74,48,.08);
+}
+.page-contact .contact-row .icon{
+  background:#F4E0CE;
+  border-radius:50%;
+  padding:7px;
+}
+.page-contact .btn-primary{
+  background:#9D5B3C;
+}
+.page-contact .btn-primary:hover{
+  background:#7F472F;
+}
+.page-contact .cta-band{
+  background:linear-gradient(120deg,#7F472F 0%,#B86F4B 100%);
+}
+
+/* Keep the palette restrained on small screens. */
+@media (max-width:700px){
+  .page-banner::after{width:180px;height:180px;right:-100px;top:-100px;}
+  .page-services .service-card:hover,
+  .page-approach .adv-item:hover{transform:none;}
+}

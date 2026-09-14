@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-services">
 
 <header>
   <div class="wrap nav-row">
@@ -19,7 +19,7 @@
       <img class="brand-mark" src="assets/uaamc-logo.png" alt="UAAMC logo">
       <span class="brand-text">UAAMC<small>Agri-Agra & Minerals Corp.</small></span>
     </a>
-    <nav>
+    <nav id="site-navigation">
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html" aria-current="page">Services</a></li>
@@ -28,7 +28,7 @@
       </ul>
     </nav>
     <a href="contact.html" class="nav-cta">Partner With Us</a>
-    <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -180,5 +180,6 @@
   </div>
 </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
