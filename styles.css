@@ -501,3 +501,99 @@ footer a:hover{color:var(--gold);}
   .page-services .service-card:hover,
   .page-approach .adv-item:hover{transform:none;}
 }
+
+
+/* =========================================================
+   SAZGAR Marketing Partner pages
+   ========================================================= */
+.page-partner{
+  --page-accent:#2374C6;
+  --page-accent-soft:rgba(35,116,198,.20);
+}
+.page-partner .page-banner{
+  background:
+    radial-gradient(circle at 86% 18%,rgba(35,116,198,.24),transparent 27%),
+    linear-gradient(135deg,#EAF4F5 0%,#DCE8F6 100%);
+}
+.partner-intro,.partner-feature-grid,.product-intro,.support-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:42px;
+  align-items:center;
+}
+.partner-hero-image,.partner-feature-grid img,.product-intro img,.support-grid img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 18px 40px rgba(15,48,89,.14);
+}
+.partner-feature{
+  padding:76px 0;
+  background:linear-gradient(135deg,#E9F2E7 0%,#F7F0DF 100%);
+}
+.partner-feature-grid img{max-height:360px;object-fit:cover;}
+.partner-stats{
+  background:linear-gradient(120deg,#0E2D62 0%,#176CB0 100%);
+  color:white;
+  padding:38px 0;
+}
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  text-align:center;
+}
+.stats-grid strong{display:block;font-size:2rem;font-family:Fraunces,serif;color:#F4C95D;}
+.stats-grid span{display:block;color:rgba(255,255,255,.8);font-size:.85rem;margin-top:5px;}
+.partner-highlight{background:#F7FAF7;}
+.feature-grid,.product-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin-top:28px;
+}
+.feature-grid article,.product-card{
+  background:white;
+  border:1px solid rgba(35,116,198,.14);
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 10px 24px rgba(15,48,89,.06);
+}
+.feature-grid h3,.product-card h3{color:#123C67;margin-top:0;}
+.partner-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+.btn-secondary{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 20px;border-radius:999px;border:1px solid var(--forest);
+  color:var(--forest);text-decoration:none;font-weight:700;
+}
+.product-intro{margin-bottom:42px;}
+.product-grid{grid-template-columns:repeat(2,1fr);}
+.product-card{padding:0;overflow:hidden;}
+.product-card img{width:100%;height:230px;object-fit:cover;display:block;}
+.product-card h3,.product-card p{margin-left:22px;margin-right:22px;}
+.product-card h3{margin-top:20px;}
+.product-card p{margin-bottom:24px;color:var(--ink-soft);}
+.source-note{font-size:.85rem;color:var(--ink-soft);margin-top:28px;}
+.support-list{padding-left:20px;color:var(--ink-soft);line-height:1.9;}
+@media(max-width:800px){
+  .partner-intro,.partner-feature-grid,.product-intro,.support-grid{grid-template-columns:1fr;gap:26px;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:28px;}
+  .feature-grid,.product-grid{grid-template-columns:1fr;}
+  .partner-feature{padding:52px 0;}
+}
+
+
+/* SAZGAR partner identity */
+.sazgar-logo{
+  display:block;
+  width:min(260px, 100%);
+  max-height:110px;
+  object-fit:contain;
+  object-position:left center;
+  margin:0 0 18px;
+  border-radius:12px;
+  background:#06265E;
+  padding:10px 16px;
+}
+.partner-feature .sazgar-logo{
+  width:min(230px,100%);
+}

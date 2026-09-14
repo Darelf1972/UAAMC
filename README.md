@@ -33,3 +33,12 @@ Replace the placeholder contact details in all HTML pages:
 - `Company details to be finalized upon confirmation.`
 
 The site intentionally uses only the supplied logo and original CSS/SVG illustrations. No external image files are required.
+
+
+## SAZGAR marketing partner pages
+
+- `sazgar.html` — Partner profile
+- `sazgar-products.html` — Product families
+- `sazgar-support.html` — After-sales and support
+
+The SAZGAR content is summarized from the supplied brochure. The website is owned and managed by UAAMC, while SAZGAR Philippines Inc. is presented as a marketing partner. Contact and product details should be confirmed with UAAMC before publication.
