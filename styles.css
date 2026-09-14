@@ -597,3 +597,17 @@ footer a:hover{color:var(--gold);}
 .partner-feature .sazgar-logo{
   width:min(230px,100%);
 }
+
+
+.contact-official{
+  padding:48px 0;
+  background:linear-gradient(135deg,#F4F0DF 0%,#E7F0E5 100%);
+}
+.contact-official p{
+  color:var(--ink-soft);
+  line-height:1.8;
+}
+.contact-official a{
+  color:var(--forest);
+  font-weight:700;
+}
