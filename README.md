@@ -1,6 +1,6 @@
 # UAAMC Corporate Website
 
-Static multi-page website for Universal Agri-Agra & Minerals Corporation.
+Static multi-page website for United Agri-Agra & Minerals Corp..
 
 ## Files
 
@@ -29,8 +29,8 @@ Static multi-page website for Universal Agri-Agra & Minerals Corporation.
 Replace the placeholder contact details in all HTML pages:
 
 - `uaamc2014@gmail.com`
-- `Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605 1605`
-- `Company details to be finalized upon confirmation.`
+- `Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605`
+- `Corporate landline: (+632) 86384277; Mobile number: [Mobile number to be added].`
 
 The site intentionally uses only the supplied logo and original CSS/SVG illustrations. No external image files are required.
 
@@ -41,14 +41,14 @@ The site intentionally uses only the supplied logo and original CSS/SVG illustra
 - `sazgar-products.html` — Product families
 - `sazgar-support.html` — After-sales and support
 
-The SAZGAR content is summarized from the supplied brochure. The website is owned and managed by UAAMC, while SAZGAR Philippines Inc. is presented as a corporate partner. Contact and product details should be confirmed with UAAMC before publication.
+SAZGAR Philippines Inc. is presented as a corporate partner of UAAMC. The SAZGAR pages describe its Philippine presence, product families, and technical and warranty support.
 
 
 ## Official UAAMC contact details
 
-**Address:** Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605 1605  
-**Telephone:** (+632) 8638 34277  
-**Mobile:** (+63) 917 831 3171  
+**Address:** Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605
+**Telephone:** (+632) 86384277
+**Mobile:** [Mobile number to be added]
 **Email:** uaamc2014@gmail.com
 
 
@@ -58,7 +58,8 @@ UAAMC cooperates and collaborates with organizations, enterprises, and corporate
 
 ## Official UAAMC contact details
 
-**Address:** Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605  
-**Telephone:** (+632) 8638 34277  
-**Mobile:** (+63) 917 831 3171  
+**Address:** Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605
+**Telephone:** (+632) 86384277
+**Mobile:** [Mobile number to be added]
 **Email:** uaamc2014@gmail.com
+
