@@ -1,4 +1,4 @@
-# UAAMC Corporate Website
+# United Agri-Agra &amp; Minerals Corp. Corporate Website
 
 Static multi-page website for United Agri-Agra & Minerals Corp..
 
@@ -41,10 +41,10 @@ The site intentionally uses only the supplied logo and original CSS/SVG illustra
 - `sazgar-products.html` — Product families
 - `sazgar-support.html` — After-sales and support
 
-SAZGAR Philippines Inc. is presented as a corporate partner of UAAMC. The SAZGAR pages describe its Philippine presence, product families, and technical and warranty support.
+SAZGAR Philippines Inc. is presented as a corporate partner of United Agri-Agra &amp; Minerals Corp.. The SAZGAR pages describe its Philippine presence, product families, and technical and warranty support.
 
 
-## Official UAAMC contact details
+## Official United Agri-Agra &amp; Minerals Corp. contact details
 
 **Address:** Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605
 **Telephone:** (+632) 86384277
@@ -52,11 +52,11 @@ SAZGAR Philippines Inc. is presented as a corporate partner of UAAMC. The SAZGAR
 **Email:** uaamc2014@gmail.com
 
 
-## UAAMC cooperation and collaboration
+## United Agri-Agra &amp; Minerals Corp. cooperation and collaboration
 
-UAAMC cooperates and collaborates with organizations, enterprises, and corporate partners whose capabilities, products, or services are relevant to its advocacy and development objectives. UAAMC may also provide marketing support for selected partner products and services.
+United Agri-Agra &amp; Minerals Corp. cooperates and collaborates with organizations, enterprises, and corporate partners whose capabilities, products, or services are relevant to its advocacy and development objectives. United Agri-Agra &amp; Minerals Corp. may also provide marketing support for selected partner products and services.
 
-## Official UAAMC contact details
+## Official United Agri-Agra &amp; Minerals Corp. contact details
 
 **Address:** Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605
 **Telephone:** (+632) 86384277
