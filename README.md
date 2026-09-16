@@ -50,3 +50,6 @@ The SAZGAR content is summarized from the supplied brochure. The website is owne
 **Telephone:** (+632) 8638 34277  
 **Mobile:** (+63) 917 831 3171  
 **Email:** uaamc2014@gmail.com
+
+
+Updated contact numbers across all pages and changed the contact page details to icon-only rows, including landline and mobile numbers.
