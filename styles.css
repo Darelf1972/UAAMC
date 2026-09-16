@@ -805,3 +805,51 @@ nav a{
 .hero h1 br {
   display: block;
 }
+
+
+/* Final hero arrangement based on the supplied layout markup.
+   Keep the illustration beside the text at tablet and desktop widths. */
+.hero .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+}
+.hero-copy {
+  min-width: 0;
+}
+.hero-art {
+  width: 100%;
+  max-width: 520px;
+  justify-self: end;
+  order: 0;
+}
+.hero h1 {
+  max-width: none;
+  font-size: clamp(2.35rem, 4.1vw, 3.35rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.hero .tagline {
+  max-width: 38rem;
+  line-height: 1.55;
+}
+.hero .tagline br {
+  display: block;
+}
+
+/* Only stack the hero on genuinely narrow phone screens. */
+@media (max-width: 700px) {
+  .hero .wrap {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .hero-art {
+    order: -1;
+    justify-self: center;
+    max-width: 420px;
+  }
+  .hero h1 {
+    max-width: 12ch;
+  }
+}
