@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Approach — United Agri-Agra &amp; Minerals Corp.</title>
-<meta name="description" content="United Agri-Agra &amp; Minerals Corp.'s strategic advantage, development philosophy, and commitment to national development.">
+<title>Our Approach — UAAMC</title>
+<meta name="description" content="UAAMC's strategic advantage, development philosophy, and commitment to national development.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,14 +19,19 @@
       <img class="brand-mark" src="assets/uaamc-logo.png" alt="United Agri-Agra &amp; Minerals Corp. logo">
       <span class="brand-text">United Agri-Agra &amp; Minerals Corp.</span>
     </a>
-    <nav id="site-navigation">
+    <nav id="site-navigation" aria-label="Main navigation">
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="approach.html" aria-current="page">Our Approach</a></li>
         <li><a href="contact.html">Contact</a></li>
-          <li><a href="sazgar.html">Corporate Partner: SAZGAR</a></li>
-        <li><a href="sazgar.html">Corporate Partners</a></li>
+        <li class="has-submenu">
+          <a href="sazgar.html" aria-haspopup="true" aria-expanded="false">Corporate Partners</a>
+          <ul class="submenu">
+            <li><a href="sazgar.html">SAZGAR Philippines Inc.</a></li>
+            <li><a href="#" class="partner-placeholder" aria-disabled="true">Additional partner (to be added)</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <a href="contact.html" class="nav-cta">Partner With Us</a>
@@ -91,7 +96,7 @@
       </div>
       <div class="phil-block commitment">
         <h3>Commitment to National Development</h3>
-        <p>United Agri-Agra &amp; Minerals Corp. actively supports initiatives that strengthen the Philippine countryside and its people.</p>
+        <p>UAAMC actively supports initiatives that strengthen the Philippine countryside and its people.</p>
         <div class="chip-list">
           <span class="chip">Food Security</span>
           <span class="chip">Agricultural Modernization</span>
@@ -119,7 +124,7 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand">
-          <img class="brand-mark" src="assets/uaamc-logo.png" alt="United Agri-Agra &amp; Minerals Corp. logo">
+          <img class="brand-mark" src="assets/uaamc-logo.png" alt="UAAMC logo">
           <span>United Agri-Agra & Minerals Corp.</span>
         </div>
         <p style="max-width:34ch; font-size:0.9rem; color:rgba(250,246,236,0.6);">A Philippine agribusiness and development enterprise turning agricultural resources into sustainable, inclusive economic growth.</p>

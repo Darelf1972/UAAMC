@@ -57,17 +57,24 @@ header{
 }
 .nav-row{
   display:flex; align-items:center; justify-content:space-between;
+  gap:24px;
   padding:18px 0;
 }
+
 .brand{
   display:flex; align-items:center; gap:12px;
   text-decoration:none;
 }
 .brand-mark{width:44px; height:44px; flex-shrink:0; object-fit:contain;}
-.brand-text{font-family:'Fraunces', serif; font-weight:600; color:var(--forest); font-size:0.92rem; line-height:1.15; max-width:245px;}
+.brand-text{font-family:'Fraunces', serif; font-weight:600; color:var(--forest); font-size:0.95rem; line-height:1; white-space:nowrap;}
 
 
-nav ul{display:flex; gap:32px; list-style:none;}
+nav ul{display:flex; align-items:center; gap:28px; list-style:none; margin:0; padding:0;}
+nav li{position:relative;}
+nav .submenu{display:none; position:absolute; top:100%; left:0; min-width:235px; padding:10px 0; background:var(--cream); border:1px solid var(--line); box-shadow:0 12px 28px rgba(18,43,33,.12); flex-direction:column; gap:0; z-index:60;}
+nav .submenu li a{display:block; padding:10px 16px; white-space:nowrap;}
+nav .has-submenu:hover > .submenu, nav .has-submenu:focus-within > .submenu{display:flex;}
+nav .partner-placeholder{opacity:.6; cursor:default;}
 nav a{
   text-decoration:none; color:var(--ink-soft); font-weight:600; font-size:0.92rem;
   padding:4px 0; border-bottom:2px solid transparent;
@@ -330,9 +337,14 @@ footer a:hover{color:var(--gold);}
   header nav.is-open ul{
     display:flex;
     flex-direction:column;
+    align-items:stretch;
     gap:0;
     padding:8px 28px 18px;
   }
+  header nav.is-open .submenu{
+    display:flex; position:static; min-width:0; padding:0 0 0 16px; border:0; box-shadow:none; background:transparent;
+  }
+  header nav.is-open .submenu li a{padding:10px 0;}
   header nav.is-open li a{
     display:block;
     padding:12px 0;
@@ -641,4 +653,144 @@ footer a:hover{color:var(--gold);}
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 22px;
+}
+
+@media (max-width:1100px){
+  .nav-row{gap:16px;}
+  .brand-text{font-size:.82rem;}
+  nav ul{gap:18px;}
+  .nav-cta{padding:10px 14px;}
+}
+@media (max-width:900px){
+  .brand-text{font-size:.9rem;}
+}
+
+
+/* ---------- Final layout and typography refinement ---------- */
+
+/* Give the hero content and CTA row breathing room before the next section. */
+.hero{
+  padding-bottom:76px;
+}
+.hero-ctas{
+  margin-top:26px;
+  margin-bottom:8px;
+  gap:20px;
+}
+.hero-ctas .btn{
+  min-width:0;
+}
+
+/* Improve heading rhythm and make long headings wrap at natural word boundaries. */
+h1,h2,h3,h4{
+  text-wrap:balance;
+  overflow-wrap:normal;
+}
+.hero h1{
+  max-width:13ch;
+  font-size:clamp(2.35rem,4.1vw,3.35rem);
+  line-height:1.08;
+  letter-spacing:-.025em;
+}
+.page-banner h1{
+  max-width:20ch;
+  font-size:clamp(2rem,3.3vw,2.8rem);
+  line-height:1.12;
+  letter-spacing:-.02em;
+}
+.section-head h2,
+.about h2,
+.partner-intro h2,
+.product-intro h2,
+.support-grid h2{
+  line-height:1.16;
+  letter-spacing:-.018em;
+}
+.page-banner p{
+  max-width:58ch;
+  line-height:1.65;
+}
+
+/* Justify body paragraphs throughout the site for a cleaner block appearance. */
+main p{
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
+}
+
+/* Keep short, expressive text from looking awkward when justified. */
+.hero .tagline,
+.hero p.lead,
+.page-banner p,
+.cta-band p,
+.source-note,
+.contact-note{
+  text-align:left;
+  hyphens:none;
+}
+
+/* More balanced navigation/header proportions. */
+.nav-row{
+  min-height:78px;
+  gap:28px;
+}
+.brand{
+  flex:0 1 auto;
+  min-width:0;
+}
+.brand-text{
+  font-size:1.02rem;
+  line-height:1.12;
+  letter-spacing:-.01em;
+}
+nav ul{
+  gap:24px;
+}
+nav a{
+  font-size:.94rem;
+  line-height:1.35;
+}
+.nav-cta{
+  padding:12px 22px;
+  font-size:.9rem;
+}
+
+/* More comfortable page-banner spacing. */
+.page-banner{
+  padding:72px 0 58px;
+}
+.section-head{
+  margin-bottom:44px;
+}
+
+/* Avoid cramped buttons and text at smaller widths. */
+@media (max-width:1100px){
+  .nav-row{gap:18px;}
+  nav ul{gap:17px;}
+  .brand-text{font-size:.95rem;}
+  .nav-cta{padding:11px 16px;}
+}
+@media (max-width:900px){
+  .hero{padding-bottom:64px;}
+  .hero-ctas{margin-bottom:4px;}
+  .nav-row{min-height:72px;}
+  .brand-text{font-size:1rem;}
+  .page-banner{padding:58px 0 48px;}
+}
+@media (max-width:560px){
+  .hero{padding-bottom:52px;}
+  .hero h1{max-width:11ch;}
+  .page-banner h1{max-width:15ch;}
+  .hero-ctas{
+    gap:12px;
+    margin-top:22px;
+  }
+  .hero-ctas .btn{
+    width:100%;
+    justify-content:center;
+  }
+  .brand-text{
+    font-size:.92rem;
+    white-space:normal;
+  }
 }
