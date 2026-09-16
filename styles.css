@@ -979,3 +979,6 @@ nav a{
 }
 
 /* Empty corporate-partner submenu slot reserved for future partners. */
+
+/* Contact numbers: reserve a blank line for the future corporate mobile number. */
+.contact-mobile-placeholder { min-height: 1.35em; margin: 0.15rem 0 0; }
