@@ -794,3 +794,14 @@ nav a{
     white-space:normal;
   }
 }
+
+
+/* Final landing-page heading treatment: exactly two balanced lines. */
+.hero h1 {
+  max-width: 18ch;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.hero h1 br {
+  display: block;
+}
