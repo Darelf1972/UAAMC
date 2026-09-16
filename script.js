@@ -12,15 +12,11 @@
     menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   });
 
-  nav.querySelectorAll('a:not(.partner-placeholder)').forEach(link => {
+  nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('is-open');
       menuButton.setAttribute('aria-expanded', 'false');
       menuButton.setAttribute('aria-label', 'Open menu');
     });
-  });
-
-  nav.querySelectorAll('.partner-placeholder').forEach(link => {
-    link.addEventListener('click', event => event.preventDefault());
   });
 })();

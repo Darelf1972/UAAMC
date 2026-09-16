@@ -29,32 +29,20 @@ Static multi-page website for Universal Agri-Agra & Minerals Corporation.
 Replace the placeholder contact details in all HTML pages:
 
 - `uaamc2014@gmail.com`
-- `Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605 1605`
+- `Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605`
 - `Company details to be finalized upon confirmation.`
 
 The site intentionally uses only the supplied logo and original CSS/SVG illustrations. No external image files are required.
 
 
-## SAZGAR corporate partner pages
+## SAZGAR marketing partner pages
 
 - `sazgar.html` — Partner profile
 - `sazgar-products.html` — Product families
 - `sazgar-support.html` — After-sales and support
 
-The SAZGAR content is summarized from the supplied brochure. The website is owned and managed by UAAMC, while SAZGAR Philippines Inc. is presented as a corporate partner. Contact and product details should be confirmed with UAAMC before publication.
+The SAZGAR content is summarized from the supplied brochure. The website is owned and managed by UAAMC, while SAZGAR Philippines Inc. is presented as a marketing partner. Contact and product details should be confirmed with UAAMC before publication.
 
-
-## Official UAAMC contact details
-
-**Address:** Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Unit 2D Greenrich Mansion, Lourdes St., Brgy. San Antonio, Pasig City, Metro Manila, Philippines 1605 1605  
-**Telephone:** (+632) 8638 34277  
-**Mobile:** (+63) 917 831 3171  
-**Email:** uaamc2014@gmail.com
-
-
-## UAAMC cooperation and collaboration
-
-UAAMC cooperates and collaborates with organizations, enterprises, and corporate partners whose capabilities, products, or services are relevant to its advocacy and development objectives. UAAMC may also provide marketing support for selected partner products and services.
 
 ## Official UAAMC contact details
 
