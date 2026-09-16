@@ -977,3 +977,5 @@ nav a{
   }
   .value-item:last-child { border-bottom: 0; padding-bottom: 0; }
 }
+
+/* Empty corporate-partner submenu slot reserved for future partners. */
