@@ -93,8 +93,9 @@ nav .has-submenu:hover > .submenu, nav .has-submenu:focus-within > .submenu{disp
 .menu-btn span{display:block; width:24px; height:2px; background:var(--forest); margin:5px 0;}
 
 /* ---------- Hero (home page) ---------- */
+/* Extra bottom spacing keeps the CTA buttons clear of the next section boundary. */
 .hero{
-  padding:72px 0 0 0;
+  padding:72px 0 32px 0;
   background:linear-gradient(180deg, var(--cream) 0%, var(--cream-alt) 100%);
   overflow:hidden;
 }
@@ -297,7 +298,7 @@ nav .has-submenu:hover > .submenu, nav .has-submenu:focus-within > .submenu{disp
 /* ---------- Responsive ---------- */
 @media (max-width:900px){
   .hero .wrap{grid-template-columns:1fr; gap:36px;}
-  .hero{padding-top:48px;}
+  .hero{padding-top:48px; padding-bottom:32px;}
   .hero-art{order:-1; max-width:420px; margin:0 auto;}
   .about-grid, .phil-grid, .contact-grid, .approach-teaser-grid{grid-template-columns:1fr; gap:40px;}
   .service-grid{grid-template-columns:repeat(2,1fr);}
